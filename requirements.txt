@@ -1,0 +1,3 @@
+ffmpeg>=4.2
+mediainfo>=20.03
+
