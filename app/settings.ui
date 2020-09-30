@@ -464,11 +464,11 @@ QComboBox QAbstractItemView {
       <height>16</height>
      </size>
     </property>
-    <property name="placeholderText">
-     <string notr="true"/>
-    </property>
     <property name="frame">
      <bool>true</bool>
+    </property>
+    <property name="placeholderText" stdset="0">
+     <string notr="true"/>
     </property>
     <item>
      <property name="text">

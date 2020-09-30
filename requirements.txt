@@ -1,3 +1,4 @@
+qt5-base>=5.14.2
 ffmpeg>=4.2
-mediainfo>=20.03
+libmediainfo>=20.03
 
