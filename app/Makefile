@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = simplest_studio1.0.0
-DISTDIR = /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/.tmp/simplest_studio1.0.0
+DISTDIR = /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/.tmp/simplest_studio1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -lmediainfo /usr/lib/libQt5Widgets.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Core.so -lGL -lpthread   
@@ -329,7 +329,6 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
-		../app/.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -621,7 +620,6 @@ Makefile: ../app/simplest_studio.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /u
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -891,7 +889,6 @@ Makefile: ../app/simplest_studio.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /u
 /usr/lib/qt/mkspecs/features/qt_config.prf:
 /usr/lib/qt/mkspecs/linux-g++/qmake.conf:
 /usr/lib/qt/mkspecs/features/spec_post.prf:
-.qmake.stash:
 /usr/lib/qt/mkspecs/features/exclusive_builds.prf:
 /usr/lib/qt/mkspecs/features/toolchain.prf:
 /usr/lib/qt/mkspecs/features/default_pre.prf:
@@ -1482,37 +1479,37 @@ compiler_moc_header_clean:
 moc_about.cpp: ../app/about.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/about.h -o moc_about.cpp
+	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/about.h -o moc_about.cpp
 
 moc_extracting.cpp: ../app/extracting.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/extracting.h -o moc_extracting.cpp
+	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/extracting.h -o moc_extracting.cpp
 
 moc_mainwindow.cpp: ../app/mainwindow.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/mainwindow.h -o moc_mainwindow.cpp
+	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/mainwindow.h -o moc_mainwindow.cpp
 
 moc_progress.cpp: ../app/progress.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/progress.h -o moc_progress.cpp
+	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/progress.h -o moc_progress.cpp
 
 moc_settings.cpp: ../app/settings.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/settings.h -o moc_settings.cpp
+	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/settings.h -o moc_settings.cpp
 
 moc_smartsettings.cpp: ../app/smartsettings.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/smartsettings.h -o moc_smartsettings.cpp
+	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/smartsettings.h -o moc_smartsettings.cpp
 
 moc_taskcomplete.cpp: ../app/taskcomplete.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build-SimplestStudio-Desktop-Release/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/taskcomplete.h -o moc_taskcomplete.cpp
+	/usr/bin/moc $(DEFINES) --include /run/media/helg/GOODRAM-SDB/QtCreatorProjects/build/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/run/media/helg/GOODRAM-SDB/QtCreatorProjects/app -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/include/c++/10.2.0 -I/usr/include/c++/10.2.0/x86_64-pc-linux-gnu -I/usr/include/c++/10.2.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed -I/usr/include ../app/taskcomplete.h -o moc_taskcomplete.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:

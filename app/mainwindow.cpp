@@ -257,12 +257,16 @@ void MainWindow::on_comboBox_23_currentTextChanged() // settings_menu
 
     if (ui->comboBox_23->currentText() == "FLAC") {
         ui->comboBox_26->addItems({"Smart mode", "16 bits", "24 bits"});
+        ui->comboBox_26->setCurrentIndex(0);
         ui->comboBox_25->addItems({"Smart mode", "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"});
+        ui->comboBox_25->setCurrentIndex(0);
         ui->comboBox_24->addItems({"Smart mode", "8000", "11025", "16000", "22050", "24000", "32000", "44100", "48000", "88200", "96000", "176400", "192000"});
+        ui->comboBox_24->setCurrentIndex(0);
         ui->label_credits_13->setText("Compress level:");
     };
     if (ui->comboBox_23->currentText() == "MP3") {
         ui->comboBox_26->addItems({"Auto"});
+        ui->comboBox_26->setCurrentIndex(0);
         ui->comboBox_25->addItems({"320k", "256k", "224k", "192k", "160k", "128k", "112k", "96k", "80k", "64k", "48k", "40k", "32k", "24k", "16k", "8k"});
         ui->comboBox_25->setCurrentIndex(3);
         ui->comboBox_24->addItems({"8000", "11025", "12000", "16000", "22050", "24000", "32000", "44100", "48000"});
@@ -272,15 +276,21 @@ void MainWindow::on_comboBox_23_currentTextChanged() // settings_menu
     };
     if (ui->comboBox_23->currentText() == "WAV") {
         ui->comboBox_26->addItems({"Smart mode", "16 bits", "24 bits"});
+        ui->comboBox_26->setCurrentIndex(0);
         ui->comboBox_25->addItems({"Auto"});
+        ui->comboBox_25->setCurrentIndex(0);
         ui->comboBox_24->addItems({"Smart mode", "8000", "11025", "16000", "22050", "24000", "32000", "44100", "48000", "88200", "96000", "176400", "192000"});
+        ui->comboBox_24->setCurrentIndex(0);
         ui->label_credits_13->setText("Bitrate:");
         ui->comboBox_25->setEnabled(false);
     };
     if (ui->comboBox_23->currentText() == "DFF") {
         ui->comboBox_26->addItems({"1 bit"});
+        ui->comboBox_26->setCurrentIndex(0);
         ui->comboBox_25->addItems({"2 ch", "5.1 ch"});
+        ui->comboBox_25->setCurrentIndex(0);
         ui->comboBox_24->addItems({"2822400"});
+        ui->comboBox_24->setCurrentIndex(0);
         ui->label_credits_13->setText("Channels:");
         ui->comboBox_24->setEnabled(false);
         ui->comboBox_26->setEnabled(false);

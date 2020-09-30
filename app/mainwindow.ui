@@ -1482,6 +1482,9 @@ QComboBox QAbstractItemView {
 }
 */</string>
       </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
       <property name="maxCount">
        <number>20</number>
       </property>
@@ -1492,7 +1495,7 @@ QComboBox QAbstractItemView {
        </size>
       </property>
       <property name="placeholderText">
-       <string notr="true"/>
+       <string notr="true">None</string>
       </property>
       <property name="frame">
        <bool>true</bool>
@@ -1566,6 +1569,9 @@ QComboBox QAbstractItemView {
       <property name="editable">
        <bool>false</bool>
       </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
       <property name="maxCount">
        <number>20</number>
       </property>
@@ -1576,7 +1582,7 @@ QComboBox QAbstractItemView {
        </size>
       </property>
       <property name="placeholderText">
-       <string notr="true"/>
+       <string notr="true">None</string>
       </property>
       <property name="frame">
        <bool>true</bool>
@@ -1708,7 +1714,7 @@ QComboBox QAbstractItemView {
        </size>
       </property>
       <property name="placeholderText">
-       <string notr="true"/>
+       <string notr="true">None</string>
       </property>
       <property name="frame">
        <bool>true</bool>
@@ -1790,7 +1796,7 @@ QComboBox QAbstractItemView {
        </size>
       </property>
       <property name="placeholderText">
-       <string notr="true"/>
+       <string notr="true">None</string>
       </property>
       <property name="frame">
        <bool>true</bool>
