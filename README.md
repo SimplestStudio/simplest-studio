@@ -35,13 +35,14 @@ Supported operating system: Linux x86_64
 
 Install dependencies:
 
-    - ffmpeg
-    - mediainfo
-
+    - ffmpeg>=4.2
+    - libmediainfo>=20.03
+    - qt5-base>=5.14.2
 
 Buld package:
 
 ```sh
+cd ../app
 make
 ```
 

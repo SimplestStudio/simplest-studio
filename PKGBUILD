@@ -12,13 +12,13 @@ source=("https://github.com/SimplestStudio/simplest-studio/archive/1.1.tar.gz")
 md5sums=('SKIP')
 
 build() {
-  cd "${srcdir}/simplest-studio-${pkgver}/app"
+  cd "${srcdir}/simplest-studio-${pkgver}"
   make -j4
 }
 
 
 package() {
-  cd "${srcdir}/simplest-studio-${pkgver}/app"
+  cd "${srcdir}/simplest-studio-${pkgver}"
   make INSTALL_ROOT="$pkgdir" install
   
   cd "${srcdir}/simplest-studio-${pkgver}"
