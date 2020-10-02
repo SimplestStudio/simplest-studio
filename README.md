@@ -4,10 +4,10 @@ Simplest Studio is an application that allows you optimize and convert audio fil
 
   - FLAC
   - WAV
-  - DFF*
+  - DFF**
   - MP3
 
-* for use this format need to installed utility 'sacd-extract'.
+** for use this format need to installed utility 'sacd-extract'.
 
 ### View
 
